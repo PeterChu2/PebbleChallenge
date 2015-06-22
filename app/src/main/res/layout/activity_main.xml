@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/rgb_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <View
+            android:id="@+id/color_display"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/commands_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/ip_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/ip_address_label"
+            android:paddingLeft="20dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tv_ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@id/ip_address_label"/>
+
+        <TextView
+            android:id="@+id/tv_port"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/port_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/port_label"
+            android:layout_toLeftOf="@id/tv_port"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

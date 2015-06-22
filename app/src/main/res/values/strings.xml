@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pebble Colors</string>
+    <string name="title_main_activity">Pebble Colors</string>
+    <string name="port">1234</string>
+    <string name="start">Start</string>
+    <string name="ip_address">IP Address:</string>
+    <string name="rgb_value">RGB Value:</string>
+    <string name="ip_address_label">IP Address: </string>
+    <string name="port_label">Port: </string>
+</resources>
